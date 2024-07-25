@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Circular Divs with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 p-6">
+    <div class="grid grid-cols-10 gap-1" id="cont">
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            1</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            2</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            3</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            4</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            5</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            6</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            7</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            8</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            9</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            10</div>
+        <div
+            class="w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full">
+            10</div>
+    </div>
+
+    <script>
+        const ds = document.getElementById('cont');
+        for (var i = 1; i < 81; i++) {
+            const div = document.createElement('div');
+            div.className = 'w-12 h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white text-center flex items-center justify-center rounded-full';
+            div.textContent = i;
+            ds.appendChild(div)
+        }
+    </script>
+</body>
+
+</html>

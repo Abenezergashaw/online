@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <!-- <style>
+        /* You might want to add this to your custom CSS file if you need additional styles */
+.tab-button.active {
+  @apply border-b-2 border-blue-500 text-blue-500;
+}
+
+.tab-content .tab-pane.active {
+  @apply block;
+}
+
+.tab-content .tab-pane.hidden {
+  @apply hidden;
+}
+
+    </style> -->
+    <style>
+        .active {
+            color: #52facc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tabs">
+        <!-- Tab Buttons -->
+        <div class="flex border-b">
+            <button class="tab-button px-4 py-2 text-gray-600 hover:text-blue-500 focus:outline-none active">Tab
+                1</button>
+            <button class="tab-button px-4 py-2 text-gray-600 hover:text-blue-500 focus:outline-none">Tab 2</button>
+            <button class="tab-button px-4 py-2 text-gray-600 hover:text-blue-500 focus:outline-none">Tab 3</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <div class="tab-pane active">
+                <p>Content for Tab 1</p>
+            </div>
+            <div class="tab-pane hidden">
+                <p>Content for Tab 2</p>
+            </div>
+            <div class="tab-pane hidden">
+                <p>Content for Tab 3</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.tab-button').forEach((button, index) => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                // Add active class to the clicked button
+                button.classList.add('active');
+
+                // Hide all tab content
+                document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.add('hidden'));
+                // Show the content of the clicked tab
+                document.querySelectorAll('.tab-pane')[index].classList.remove('hidden');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

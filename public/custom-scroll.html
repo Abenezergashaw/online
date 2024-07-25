@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Scrollbar on Body with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom scrollbar styles for the body */
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 6px;
+        }
+
+        body::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Ensure html and body take up full height */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 overflow-y-scroll">
+    <div class="p-4 bg-white">
+        <h1 class="text-xl font-bold mb-4">Scroll Down</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor, arcu non suscipit cursus, purus libero
+            dapibus eros, ac dictum lorem purus at ipsum. Vivamus nec lorem dolor. Nulla facilisi. Integer bibendum,
+            lorem vel blandit fringilla, augue dui aliquam metus, ac bibendum nulla sapien non metus. Curabitur feugiat
+            ligula eu metus interdum, id facilisis massa tincidunt. Quisque suscipit convallis metus. Nulla facilisi.
+            Aenean venenatis tincidunt libero, sit amet ultrices leo vehicula at. Nulla vehicula dui et fermentum
+            venenatis. Duis quis ligula non justo lacinia fringilla. Sed consectetur lectus id ex finibus, vel tincidunt
+            leo congue. Sed et mi non nisi luctus dignissim. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor, arcu non suscipit cursus, purus libero
+            dapibus eros, ac dictum lorem purus at ipsum. Vivamus nec lorem dolor. Nulla facilisi. Integer bibendum,
+            lorem vel blandit fringilla, augue dui aliquam metus, ac bibendum nulla sapien non metus. Curabitur feugiat
+            ligula eu metus interdum, id facilisis massa tincidunt. Quisque suscipit convallis metus. Nulla facilisi.
+            Aenean venenatis tincidunt libero, sit amet ultrices leo vehicula at. Nulla vehicula dui et fermentum
+            venenatis. Duis quis ligula non justo lacinia fringilla. Sed consectetur lectus id ex finibus, vel tincidunt
+            leo congue. Sed et mi non nisi luctus dignissim. Nulla facilisi.</p>
+        <!-- Repeat more content to ensure scrolling -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor, arcu non suscipit cursus, purus libero
+            dapibus eros, ac dictum lorem purus at ipsum. Vivamus nec lorem dolor. Nulla facilisi. Integer bibendum,
+            lorem vel blandit fringilla, augue dui aliquam metus, ac bibendum nulla sapien non metus. Curabitur feugiat
+            ligula eu metus interdum, id facilisis massa tincidunt. Quisque suscipit convallis metus. Nulla facilisi.
+            Aenean venenatis tincidunt libero, sit amet ultrices leo vehicula at. Nulla vehicula dui et fermentum
+            venenatis. Duis quis ligula non justo lacinia fringilla. Sed consectetur lectus id ex finibus, vel tincidunt
+            leo congue. Sed et mi non nisi luctus dignissim. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor, arcu non suscipit cursus, purus libero
+            dapibus eros, ac dictum lorem purus at ipsum. Vivamus nec lorem dolor. Nulla facilisi. Integer bibendum,
+            lorem vel blandit fringilla, augue dui aliquam metus, ac bibendum nulla sapien non metus. Curabitur feugiat
+            ligula eu metus interdum, id facilisis massa tincidunt. Quisque suscipit convallis metus. Nulla facilisi.
+            Aenean venenatis tincidunt libero, sit amet ultrices leo vehicula at. Nulla vehicula dui et fermentum
+            venenatis. Duis quis ligula non justo lacinia fringilla. Sed consectetur lectus id ex finibus, vel tincidunt
+            leo congue. Sed et mi non nisi luctus dignissim. Nulla facilisi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor, arcu non suscipit cursus, purus libero
+            dapibus eros, ac dictum lorem purus at ipsum. Vivamus nec lorem dolor. Nulla facilisi. Integer bibendum,
+            lorem vel blandit fringilla, augue dui aliquam metus, ac bibendum nulla sapien non metus. Curabitur feugiat
+            ligula eu metus interdum, id facilisis massa tincidunt. Quisque suscipit convallis metus. Nulla facilisi.
+            Aenean venenatis tincidunt libero, sit amet ultrices leo vehicula at. Nulla vehicula dui et fermentum
+            venenatis. Duis quis ligula non justo lacinia fringilla. Sed consectetur lectus id ex finibus, vel tincidunt
+            leo congue. Sed et mi non nisi luctus dignissim. Nulla facilisi.</p>
+
+    </div>
+</body>
+
+</html>

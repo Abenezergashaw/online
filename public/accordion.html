@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion with Button Toggle</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .accordion-content.open {
+            max-height: 500px;
+            /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <div class="max-w-lg mx-auto mt-10">
+        <!-- Accordion Item -->
+        <div class="accordion-item bg-white rounded shadow-md mb-2">
+            <div class="accordion-header flex justify-between items-center p-4 cursor-pointer">
+                <h2 class="text-lg font-semibold">Accordion Header</h2>
+                <button class="toggle-btn text-3xl font-bold">+</button>
+            </div>
+            <div class="accordion-content">
+                <p>
+                    This is the hidden content that will be shown when the accordion is expanded.
+                    You can place any content here.
+                </p>
+            </div>
+        </div>
+        <!-- Repeat for more accordion items -->
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const button = header.querySelector('.toggle-btn');
+
+                content.classList.toggle('open');
+                button.textContent = content.classList.contains('open') ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+
+</html>
